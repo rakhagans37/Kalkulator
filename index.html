@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Modern</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="upper">
+            <div class="toogle">
+                <label class="switch">
+                    <input type="checkbox" id="checktheme">
+                    <span class="slider round">
+                        <div class="image">
+                            <img src="img/night_mode.png" alt="">
+                            <img src="img/light_mode.png" alt="">
+                        </div>
+                    </span>
+                </label>
+            </div>
+            <div class="print">
+                <div class="operation">
+                    <p id="operation">1.000 × 2 + 2 × 2</p>
+                </div>
+                <div class="samadengan">
+                    <p id="samadengan">=</p>
+                    <p id="total">2004</p>
+                </div>
+            </div>
+        </div>
+        <div class="button-package" id="button-package">
+            <div class="button-container">
+                <div class="left-side">
+                    <div class="special-func" id="special-func">
+                        <button>AC</button>
+                        <button>+/-</button>
+                        <button>%</button>
+                    </div>
+                    <div class="number-package" id="number-package">
+                        <div class="row">
+                            <button class="number">7</button>
+                            <button class="number">4</button>
+                            <button class="number">1</button>
+                            <button class="number">.</button>
+                        </div>
+                        <div class="row">
+                            <button class="number">8</button>
+                            <button class="number">5</button>
+                            <button class="number">2</button>
+                            <button class="number">0</button>
+                        </div>
+                        <div class="row">
+                            <button class="number">9</button>
+                            <button class="number">6</button>
+                            <button class="number">3</button>
+                            <button class="number">00</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side" id="right-side">
+                    <button>+</button>
+                    <button>x</button>
+                    <button>-</button>
+                    <button>/</button>
+                    <button class="special">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculatorScript.js"></script>
+</body>
+</html>

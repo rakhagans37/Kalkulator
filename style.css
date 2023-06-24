@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS START HERE */
+body{
+	background: linear-gradient(135deg, #E5E5E5 0%, #F9F9F9 12.84%, #F3F3F3 32.53%, #FEFEFE 93.36%);
+}
+body.dark{
+	background: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.toogle{
+	display: flex;
+	flex-direction: row;
+	height: 27.35%;
+	align-items: end;
+	justify-content: center;
+}
+.upper{
+	display: flex;
+    height: 40.909090909090909090909090909091%;
+	width: 83.92%;
+	align-self: center;
+	flex-direction: column;
+	gap: 45%;
+}
+.button-package{
+	display: flex;
+    height: 59.090909090909090909090909090909%;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+	background-color: rgba(230, 246, 255, 0.20);
+	background:linear-gradient(220deg, rgba(158, 232, 255, 0.5), rgba(90, 206, 255, 0.5), rgba(121, 175, 255, 0.5), rgba(45, 95, 222, 0.5));
+	opacity: 1;
+	box-shadow: 0px -5px 70px 0px rgba(0, 0, 0, 0.10);
+	border-top-left-radius:30px;
+	border-top-right-radius: 30px;
+}
+.button-package.darkbutton-package{
+	background-color: rgba(0, 34, 53, 0.40);
+	background:linear-gradient(220deg, rgba(66, 134, 155, 0.5), rgba(42, 125, 161, 0.5), rgba(34, 78, 145, 0.5), rgba(0, 18, 63, 0.5));
+	box-shadow: 0px -5px 70px 0px rgba(0, 0, 0, 0.10);
+}
+#operation{
+	color: rgba(55, 55, 55, 0.50);
+	text-align: right;
+	font-size: 22px;
+	font-family: 'Poppins';
+	font-weight: 500;
+}
+#operation.dark{
+	color: #fbfbfb81;
+}
+.print{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2px;
+	gap: 15px;
+	
+}
+.samadengan{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+#samadengan{
+	color: #373737;
+	text-align: left;
+	font-size: 26px;
+	font-family: 'Poppins';
+	font-weight: 600;
+}
+#total{
+	color: #373737;
+	text-align: right;
+	font-size: 40px;
+	font-family: 'Poppins';
+	font-weight: 600;
+}
+#samadengan.dark{
+	color: #FBFBFB;
+}
+#total.dark{
+	color: #FBFBFB;
+}
+
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 122px;
+	height: 44px;
+  }
+  
+  .switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #A9DCFD;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  .slider::before {
+	position: absolute;
+	content: "";
+	height: 44px;
+	width: 68px;
+	background-color: #D8EEFF;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  .image{
+	display: flex;
+	flex-direction: row;
+	gap: 28.5px;
+	margin-left: 17px;
+	margin-top: 7px;
+  }
+  input:checked + .slider {
+	background-color: #1B6A9C;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(54px);
+	-ms-transform: translateX(54px);
+	transform: translateX(54px);
+	background-color: #003661;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 40px;
+  }
+  
+  .slider.round:before {
+	border-radius: 40px;
+  }
+
+.button-container{
+	width: 83.92%;
+	height: 90%;
+	display: flex;
+	flex-direction: row;
+	gap: 7%;
+}
+.left-side{
+	display: flex;
+	flex-direction: column;
+	width: 73%;
+	gap: 4.35%;
+}
+.special-func{
+	display: flex;
+	flex-direction: row;
+	gap: 9.65%;
+	border-radius: 40px;
+	background: rgba(255, 255, 255, 0.30);
+	box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.05);
+	height: 15.28%;
+	justify-content: space-between;
+}
+.special-func button{
+	background: none;
+	border: none;
+	width: 100%;
+	color: #373737;
+	text-align: center;
+	font-size: 26px;
+	font-family: Poppins;
+	font-weight: 600;
+}
+#special-func.dark{
+	background: rgba(5, 5, 5, 0.3);
+}
+#special-func.dark button{
+	color: #FBFBFB;
+}
+.number-package{
+	display: flex;
+	flex-direction: row;
+	gap: 9.65%;
+	height: 80.37%;
+	width: 100%;
+}
+#number-package.dark .number{
+	background: rgba(5, 5, 5, 0.3);
+	color: #FBFBFB;
+}
+.row{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-between;
+}
+.number{
+	width: 100%;
+	height: 70px;
+	border-radius: 70px;
+	border: none;
+	background: rgba(255, 255, 255, 0.30);
+	/* aa */
+	box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.05);
+	color: #373737;
+	text-align: center;
+	font-size: 26px;
+	font-family: Poppins;
+	font-weight: 600;
+}
+.right-side{
+	width: 19.8%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 40px;
+	background: rgba(255, 255, 255, 0.30);
+	/* aa */
+	box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.05);
+	justify-content: space-between;
+	gap: 5.83%;
+}
+
+.right-side button{
+	width: 100%;
+	height: 100%;
+	background: none;
+	border: none;
+	color: #373737;
+	text-align: center;
+	font-size: 26px;
+	font-family: Poppins;
+	font-weight: 600;
+}
+
+.right-side .special{
+	background-color: #D8EEFF;
+	border-radius: 100px;
+}
+
+#right-side.dark{
+	background: rgba(5, 5, 5, 0.3);
+}
+#right-side.dark button{
+	color: #FBFBFB;
+}
+#right-side.dark .special{
+	background-color: #050505;
+}
