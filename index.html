@@ -25,11 +25,11 @@
             </div>
             <div class="print">
                 <div class="operation">
-                    <p id="operation">1.000 × 2 + 2 × 2</p>
+                    <p id="operation"></p>
                 </div>
                 <div class="samadengan">
-                    <p id="samadengan">=</p>
-                    <p id="total">2004</p>
+                    <p id="samadengan"></p>
+                    <p id="total"></p>
                 </div>
             </div>
         </div>
@@ -37,37 +37,37 @@
             <div class="button-container">
                 <div class="left-side">
                     <div class="special-func" id="special-func">
-                        <button>AC</button>
-                        <button>+/-</button>
+                        <button onclick="clearText()">AC</button>
+                        <button onclick="insert('7')">+/-</button>
                         <button>%</button>
                     </div>
                     <div class="number-package" id="number-package">
                         <div class="row">
-                            <button class="number">7</button>
-                            <button class="number">4</button>
-                            <button class="number">1</button>
-                            <button class="number">.</button>
+                            <button class="number" onclick="insert('7')">7</button>
+                            <button class="number" onclick="insert('4')">4</button>
+                            <button class="number" onclick="insert('1')">1</button>
+                            <button class="number" onclick="insert('.')">.</button>
                         </div>
                         <div class="row">
-                            <button class="number">8</button>
-                            <button class="number">5</button>
-                            <button class="number">2</button>
-                            <button class="number">0</button>
+                            <button class="number" onclick="insert('8')">8</button>
+                            <button class="number" onclick="insert('5')">5</button>
+                            <button class="number" onclick="insert('2')">2</button>
+                            <button class="number" onclick="insert('0')">0</button>
                         </div>
                         <div class="row">
-                            <button class="number">9</button>
-                            <button class="number">6</button>
-                            <button class="number">3</button>
-                            <button class="number">00</button>
+                            <button class="number" onclick="insert('9')">9</button>
+                            <button class="number" onclick="insert('6')">6</button>
+                            <button class="number" onclick="insert('3')">3</button>
+                            <button class="number" onclick="insert('00')">00</button>
                         </div>
                     </div>
                 </div>
                 <div class="right-side" id="right-side">
-                    <button>+</button>
-                    <button>x</button>
-                    <button>-</button>
-                    <button>/</button>
-                    <button class="special">=</button>
+                    <button onclick="insert('+')">+</button>
+                    <button onclick="insert('*')">x</button>
+                    <button onclick="insert('-')">-</button>
+                    <button onclick="insert('/')">/</button>
+                    <button class="special" onclick="getTotal()">=</button>
                 </div>
             </div>
         </div>

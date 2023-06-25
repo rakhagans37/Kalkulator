@@ -24,3 +24,22 @@ darkmode.addEventListener("change", () => {
       document.getElementById("right-side").classList.remove("dark");
    }
 });
+
+let operation = document.getElementById("operation");
+let total = document.getElementById("total");
+let totalSymbol = document.getElementById("samadengan");
+
+function insert(value) {
+   operation.textContent += value;
+}
+
+function clearText() {
+   operation.textContent = "";
+   total.textContent = "";
+   totalSymbol.textContent = "";
+}
+
+function getTotal() {
+   total.textContent = eval(operation.textContent);
+   totalSymbol.textContent = "=";
+}
