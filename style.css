@@ -224,6 +224,7 @@ body.dark{
 	box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.05);
 	height: 15.28%;
 	justify-content: space-between;
+	overflow: hidden;
 }
 .special-func button{
 	background: none;
@@ -235,11 +236,17 @@ body.dark{
 	font-family: Poppins;
 	font-weight: 600;
 }
+.special-func button:active{
+	background: rgba(255, 255, 255, 1);
+}
 #special-func.dark{
 	background: rgba(5, 5, 5, 0.3);
 }
 #special-func.dark button{
 	color: #FBFBFB;
+}
+#special-func.dark button:active{
+	background: rgba(5, 5, 5, 1);
 }
 .number-package{
 	display: flex;
@@ -251,6 +258,9 @@ body.dark{
 #number-package.dark .number{
 	background: rgba(5, 5, 5, 0.3);
 	color: #FBFBFB;
+}
+#number-package.dark .number:active{
+	background: rgba(5, 5, 5, 1);
 }
 .row{
 	display: flex;
@@ -272,6 +282,9 @@ body.dark{
 	font-family: Poppins;
 	font-weight: 600;
 }
+.number:active{
+	background: rgba(255, 255, 255, 1);;
+}
 .right-side{
 	width: 19.8%;
 	display: flex;
@@ -282,6 +295,7 @@ body.dark{
 	box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.05);
 	justify-content: space-between;
 	gap: 5.83%;
+	overflow: hidden;
 }
 
 .right-side button{
@@ -295,6 +309,9 @@ body.dark{
 	font-family: Poppins;
 	font-weight: 600;
 }
+.right-side button:active{
+	background: rgba(255, 255, 255, 1);
+}
 
 .right-side .special{
 	background-color: #D8EEFF;
@@ -307,6 +324,9 @@ body.dark{
 #right-side.dark button{
 	color: #FBFBFB;
 }
+#right-side.dark button:active{
+	background: rgba(5, 5, 5, 1);
+}
 #right-side.dark .special{
-	background-color: #050505;
+	background-color: #0505054a;
 }
