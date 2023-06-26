@@ -340,10 +340,10 @@ button#history{
 div.history{
 	border-radius: 8px;
 }
-div.history:hover{
+div.history:active{
 	background-color:#a9dbfd77;
 }
-div.history.dark:hover{
+div.history.dark:active{
 	background-color: #1b6b9c85;
 }
 button#history img{

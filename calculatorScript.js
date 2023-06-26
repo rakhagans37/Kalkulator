@@ -10,6 +10,7 @@ let historyImg = document.getElementById("historyImg");
 let historyDiv = document.getElementById("historyDiv");
 let historyList = document.getElementById("history-list");
 let arrayHistory = [];
+let numberHistory = 0;
 
 darkmode.addEventListener("change", () => {
    if (darkmode.checked) {
@@ -80,7 +81,7 @@ function historyPrint(operationString, totalString) {
    createTotal.textContent = totalString;
 
    createDiv.classList.add("history-unit");
-   createDiv.setAttribute("onclick", "historyCopy()");
+   createDiv.setAttribute("onclick", `historyCopy(${numberHistory})`);
    createOp.classList.add("operation");
    createDivTotal.classList.add("history-print");
 
@@ -89,4 +90,12 @@ function historyPrint(operationString, totalString) {
    createDiv.appendChild(createDivTotal);
    createDivTotal.appendChild(createSamaDengan);
    createDivTotal.appendChild(createTotal);
+
+   numberHistory += 1;
 }
+
+historyCopy = (index) => {
+   historyList.style.visibility = "hidden";
+   total.textContent = arrayHistory[index][1];
+   operation.textContent = arrayHistory[index][0];
+};
