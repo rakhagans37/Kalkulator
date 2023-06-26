@@ -22,6 +22,11 @@
                         </div>
                     </span>
                 </label>
+                <div class="history" id="historyDiv" onclick="historyOn()">
+                    <button id="history">
+                        <img id="historyImg" src="img/Historyl.png" alt="" width="30px" height="30px">
+                    </button>
+                </div>
             </div>
             <div class="print">
                 <div class="operation">
@@ -70,6 +75,8 @@
                     <button class="special" onclick="getTotal()">=</button>
                 </div>
             </div>
+        </div>
+        <div id="history-list" class="history-list" style="width: 100%;height: 59.090909090909090909090909090909vh; overflow-y: scroll; position: absolute;bottom: 0;">
         </div>
     </div>
 
