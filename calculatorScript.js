@@ -55,7 +55,8 @@ function clearText() {
 
 function getTotal() {
    operation.textContent = total.textContent;
-   total.textContent = eval(total.textContent);
+   let totalFromOp = eval(total.textContent.replaceAll(",", ""));
+   total.textContent = separateString(totalFromOp);
    totalSymbol.textContent = "=";
    arrayHistory.push([operation.textContent, total.textContent]);
    historyPrint(operation.textContent, total.textContent);
@@ -109,7 +110,13 @@ repeat = () => {
          operation.textContent.length,
          operation.textContent.indexOf(" ")
       );
-   total.textContent = eval(operation.textContent);
+   let totalFromOp = eval(operation.textContent.replaceAll(",", ""));
+   total.textContent = separateString(totalFromOp);
    arrayHistory.push([operation.textContent, total.textContent]);
    historyPrint(operation.textContent, total.textContent);
+};
+
+separateString = (stringName) => {
+   let stringToNum = Number(stringName);
+   return stringToNum.toLocaleString();
 };
