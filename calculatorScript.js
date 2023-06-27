@@ -24,6 +24,7 @@ darkmode.addEventListener("change", () => {
       rightSide.classList.add("dark");
       historyImg.src = "img/History.png";
       historyDiv.classList.add("dark");
+      historyList.classList.add("dark");
    } else {
       document.body.classList.remove("dark");
       document
@@ -37,6 +38,7 @@ darkmode.addEventListener("change", () => {
       rightSide.classList.remove("dark");
       historyImg.src = "img/Historyl.png";
       historyDiv.classList.remove("dark");
+      historyList.classList.remove("dark");
    }
 });
 
@@ -98,4 +100,16 @@ historyCopy = (index) => {
    historyList.style.visibility = "hidden";
    total.textContent = arrayHistory[index][1];
    operation.textContent = arrayHistory[index][0];
+};
+
+repeat = () => {
+   operation.textContent =
+      total.textContent +
+      operation.textContent.substring(
+         operation.textContent.length,
+         operation.textContent.indexOf(" ")
+      );
+   total.textContent = eval(operation.textContent);
+   arrayHistory.push([operation.textContent, total.textContent]);
+   historyPrint(operation.textContent, total.textContent);
 };
